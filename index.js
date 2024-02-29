@@ -1,10 +1,10 @@
-const inquirer = require("inquirer"); // Import inquirer module
+const inquirer = require("inquirer"); 
 const Circle = require("./lib/circle");
 const Square = require("./lib/square");
 const Triangle = require("./lib/triangle");
 const fs = require("fs");
 
-// Define questions for user input
+
 const questions = [
     {
         type: "list",
@@ -32,12 +32,12 @@ const questions = [
     }
 ];
 
-// Prompt the user for input
+
 inquirer.prompt(questions)
     .then(data => {
         let shape;
 
-        // Instantiate the appropriate shape class based on user input
+       
         switch (data.shape) {
             case "circle":
                 shape = new Circle(data.text, data.textColor, data.shapeColor);
@@ -53,10 +53,9 @@ inquirer.prompt(questions)
                 return;
         }
 
-        // Generate SVG code
+       
         const svgCode = shape.render();
 
-        // Write SVG code to a file with a dynamic filename
         const filename = `./examples/${data.shape}.svg`;
         fs.writeFile(filename, svgCode, err => {
             if (err) {
