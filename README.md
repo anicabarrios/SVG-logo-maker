@@ -16,11 +16,11 @@ This app is powered by Node.js, utilizes inquirer v8.2.4 (node package manager),
 
 ## Usage
 
-Provide instructions and examples for use. Include screenshots as needed.
+[Link to My Video](https://drive.google.com/file/d/1xNjNPJ-O7hfRhs_5Yh4fviRh5n_W9mnc/view)
 
-    ```md
-    ![alt text](assets/images/screenshot.png)
-    ```
+![Screenshot logo example](Images/logo-example.png)
+
+<a link="https://github.com/anicabarrios/SVG-logo-maker">Link to Github Repository</a>
 
 ## License
 
